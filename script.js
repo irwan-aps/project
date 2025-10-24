@@ -6,10 +6,10 @@ function cekDanArahkan() {
             window.location.href = "trigonometri.html";
             break;
         case "logaritma":
-            window.location.href = "logaritma.html";
+            window.location.href = "Logaritma.html";
             break;
         case "eksponen":
-            window.location.href = "eksponen.html";
+            window.location.href = "Eksponen.html";
             break;
         case "Baris dan Deret":
             window.location.href = "baris dan deret.html";
@@ -25,3 +25,4 @@ function cekDanArahkan() {
             break;
     }
 }
+
