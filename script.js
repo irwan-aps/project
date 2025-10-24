@@ -22,6 +22,3 @@ function cekDanArahkan() {
             break;
     }
 }
-}
-
-
