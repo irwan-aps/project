@@ -9,7 +9,7 @@ function cekDanArahkan() {
             window.location.href = "logaritma.html";
             break;
         case "eksponen":
-            window.location.href = "eksponen.html";
+            window.location.href = "Eksponen.html";
             break;
         case "baris dan deret":
             window.location.href = "baris dan deret.html";
@@ -22,3 +22,4 @@ function cekDanArahkan() {
             break;
     }
 }
+
