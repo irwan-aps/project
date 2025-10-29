@@ -2,7 +2,7 @@ function cekDanArahkan() {
     let kataInput = document.getElementById("kotakInput").value.toLowerCase();
 
      switch (kataInput) {
-        case "trigonometri":
+        case "trigonometri" or "trigono" or "trig":
             window.location.href = "trigonometri.html";
             break;
         case "logaritma":
@@ -22,5 +22,6 @@ function cekDanArahkan() {
             break;
     }
 }
+
 
 
