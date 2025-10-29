@@ -6,7 +6,6 @@
     <title>Matematrick</title>
 </head>
 <style type="text/css">body{background-image: url(math.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;}</style>
-<link rel="stylesheet" href="style.css">
 <body>
     <style>
         .main{justify-items: center; color: white;}
@@ -75,6 +74,26 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+        .slider-container {
+    margin-top: 100px;
+    width: 100%
+    margin: auto; /* Posisikan di tengah halaman */
+    overflow: hidden; /* Sembunyikan gambar yang berada di luar wadah */
+    border: 1px solid #ccc;
+    
+}
+
+.slider {
+    height: 260px;
+    display: flex; /* Atur gambar dalam satu baris */
+    width: 100 px/* Lebar total semua gambar (misal: 3 gambar = 100% * 3) */
+    transition: transform 1s ease-in-out; /* Animasi pergeseran yang halus */
+    align-items: center;
+}
+
+.slider img {
+    width: 100%;/* Setiap gambar memiliki lebar 100% dari .slider-container */
+}
     </style>
     <div class="main">
         <p class="satu">MATH EDUCATION</p>
@@ -113,6 +132,7 @@
 </body>
 
 </html>  
+
 
 
 
