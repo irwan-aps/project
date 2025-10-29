@@ -8,6 +8,9 @@ function cekDanArahkan() {
         case "trigono":
             window.location.href = "trigonometri.html";
             break;
+        case "tri":
+            window.location.href = "trigonometri.html";
+            break;
              
         case "logaritma":
             window.location.href = "logaritma.html";
@@ -41,6 +44,7 @@ function cekDanArahkan() {
             break;
     }
 }
+
 
 
 
