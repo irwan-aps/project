@@ -1,52 +1,15 @@
-function cekDanArahkan() {
-    let kataInput = document.getElementById("kotakInput").value.toLowerCase();
+document.addEventListener("DOMContentLoaded", function() {
+    const slider = document.querySelector(".slider");
+    const images = document.querySelectorAll(".slider img");
+    let currentIndex = 0;
+    const totalImages = images.length;
+    const intervalTime = 3000; // Interval waktu (dalam milidetik), contoh: 3 detik
 
-     switch (kataInput) {
-        case "trigonometri":
-            window.location.href = "trigonometri.html";
-            break;
-        case "trigono":
-            window.location.href = "trigonometri.html";
-            break;
-        case "tri":
-            window.location.href = "trigonometri.html";
-            break;
-             
-        case "logaritma":
-            window.location.href = "logaritma.html";
-            break;
-        case "log":
-            window.location.href = "logaritma.html";
-            break;
-             
-        case "eksponen":
-            window.location.href = "eksponen.html";
-            break;
-        case "ekspo":
-            window.location.href = "eksponen.html";
-            break;
-             
-        case "baris dan deret":
-            window.location.href = "baris dan deret.html";
-            break;
-        case "baris":
-            window.location.href = "baris dan deret.html";
-            break;
-        case "deret":
-            window.location.href = "baris dan deret.html";
-            break;
-             
-        case "limit":
-            window.location.href = "limit.html";
-             break;
-        default:
-            alert("Kata tidak ditemukan. Coba lagi!");
-            break;
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalImages;
+        const offset = -currentIndex * 100;
+        slider.style.transform = `translateX(${offset}%)`;
     }
-}
 
-
-
-
-
-
+    setInterval(nextSlide, intervalTime);
+});
